@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+.img-100{width:100%; height: auto}
+
+.quangcao{
+	position:absolute; width: 50%; height: 80%; left: 25%; top: 5%; background: #FFF; z-index: 2
+}	
+	
+.btn-close{
+	position: absolute; right: 0; top: 0; background-color: rgba(14,10,10,0.01); padding: 10px; border: none; cursor: pointer
+}
+.overlay{
+	
+width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);
+	position: fixed /*khoa box 100% cao-rong tai vi tri left-top=0*/;
+		left:0; top: 0; z-index: 1
+}
+
+.center{
+	margin: auto; width: 100%; padding: 20px; top:45%
+}
+.overlay1{
+	width:100%; height:100%; background-color: rgba(168,168,168,0.53); position: fixed; left: 0; top: 0
+}
+.img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+	z-index: -1;}
+.padding{
+	padding:20px
+}
+.verticle-line{
+	width: 0.5px;height: 100%; background-color: rgba(255,255,255,0.20)
+}
+.horizontal-line{
+	width:100% ; height:0.5px ; background-color: rgba(255,255,255,0.20)
+}
+@media(min-width:600px)
+{
+.col-md-1{ width:8.33%}
+.col-md-2{width:16.66%}
+.col-md-3{ width:25%}
+.col-md-4{ width:33.33%}
+.col-md-5{ width:41.66%}
+.col-md-6{ width:50%}
+.col-md-7{ width:58.33%}
+.col-md-8{ width:66.66%}
+.col-md-9{ width:75%}
+.col-md-10{ width:83.33%}
+.col-md-11{ width:91.66%}
+.col-md-12{ width:100%}		
+}
+
+@media(min-width:1000px)
+{
+.col-lg-1{ width:8.33%}
+.col-lg-2{width:16.66%}
+.col-lg-3{ width:25%}
+.col-lg-4{ width:33.33%}
+.col-lg-5{ width:41.66%}
+.col-lg-6{ width:50%}
+.col-lg-7{ width:58.33%}
+.col-lg-8{ width:66.66%}
+.col-lg-9{ width:75%}
+.col-lg-10{ width:83.33%}
+.col-lg-11{ width:91.66%}
+.col-lg-12{ width:100%}		
+}
+
+.navbar{
+	position: sticky; top: 0; z-index: 1000
+}
+
+.overlay-bg{
+	position: absolute; width:100%;  background-color: rgba(62,59,59,0.50);  top: center; padding:auto; padding-top: 20px; padding-bottom: 20px
+}
+
+
+
+
+.navbar {
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link, .drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background:#e9a436;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+
+.nav-link:hover {
+    background-color: #e9a436;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.services:hover .drop-down {
+    display: block;
+}
+
+.services a {
+    display: flex;
+    align-items: center;
+}
+
+.services .dropdown-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.services:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+    background: black;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.bg-img{
+	background-image: url( "../images/IMG_84561-1.jpg"); background-position: right bottom;  background-size:100% ; background-repeat:no-repeat; background-attachment: fixed; 
+}
+.padding-y {
+  border: 1px ; 
+  padding: 200px;
+}
+.accordion1{
+	margin: 50px auto; width: 100%; 
+}
+.accordion1 li{
+	list-style: none; width: 100%;margin-bottom : 10px;padding: 10px;border-radius: 8px;background:  #e3edf7
+}
+.accordion1 li label{
+	display: flex; align-items: center;padding: 10px;font-size: 18px; font-weight: 500; cursor: pointer
+}
+label::before{
+	content: '+'; margin-right: 10px;font-size: 24px; font-weight: 600
+}
+input[type="radio"]{
+	display: none
+}
+.accordion1 .content {
+	color: #555;padding:  0 10px; line-height: 26px; max-height: 0; overflow: hidden; transition: max-height 0.5s, padding 0.5s
+}
+.accordion1 input[type="radio"]:checked + label + .content{
+	max-height: 400px; padding: 10px 10px 20px
+}
